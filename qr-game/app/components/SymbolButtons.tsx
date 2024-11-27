@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Terminal, RefreshCw } from "lucide-react";
-import { useRouter } from "next/navigation";
 
 const symbols = ["heart", "flower", "star", "car", "triangle", "circle"];
 
@@ -12,7 +11,6 @@ const SymbolButtons = ({
   onDoneClick: () => void;
 }) => {
   const [showRetry, setShowRetry] = useState(false);
-  const router = useRouter();
 
   const handleDone = () => {
     onDoneClick();
@@ -64,7 +62,7 @@ const SymbolButtons = ({
           onClick={handleRetry}
         >
           <div className="flex flex-col items-center gap-1">
-            <span className="text-sm opacity-80">QR didn't work?</span>
+            <span className="text-sm opacity-80">QR didn&apos;t work?</span>
             <div className="flex items-center gap-2">
               <RefreshCw size={16} />
               RETRY
