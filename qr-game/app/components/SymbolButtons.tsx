@@ -22,7 +22,7 @@ const SymbolButtons = ({
         className="px-4 py-2 bg-red-500 text-white rounded shadow hover:bg-red-700"
         onClick={onDoneClick}
       >
-        I'm Done
+        I&apos;m Done
       </button>
     </div>
   );

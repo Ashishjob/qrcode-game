@@ -47,31 +47,6 @@ const correctSymbols = ["star", "triangle", "heart"];
 const otherSymbols = ["flower", "car", "circle"];
 const GRID_SIZE = QR_MATRIX.length;
 
-const generateGrid = (): Cell[] => {
-    const correctSymbols = ["star", "triangle", "heart"];
-    const otherSymbols = ["flower", "car", "circle"];
-    const cells: Cell[] = [];
-    
-    QR_MATRIX.forEach((row, y) => {
-      row.forEach((cell, x) => {
-        if (cell === 1) {
-          cells.push({
-            id: y * GRID_SIZE + x,
-            type: correctSymbols[Math.floor(Math.random() * correctSymbols.length)],
-            active: false,
-          });
-        } else {
-          cells.push({
-            id: y * GRID_SIZE + x,
-            type: otherSymbols[Math.floor(Math.random() * otherSymbols.length)],
-            active: false,
-          });
-        }
-      });
-    });
-    return cells;
-  };
-
   const GameBoard = ({
     activeSymbols,
     isDone,
