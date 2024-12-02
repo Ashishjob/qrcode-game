@@ -82,7 +82,7 @@ const GRID_SIZE = QR_MATRIX.length;
   
     return (
       <div
-        className="grid gap-0"
+        className={`grid ${isDone ? "gap-0 bg-black" : "gap-0"}`}
         style={{
           gridTemplateColumns: `repeat(${GRID_SIZE}, 1fr)`,
         }}
@@ -98,7 +98,8 @@ const GRID_SIZE = QR_MATRIX.length;
           return (
             <div
               key={cell.id}
-              className={`w-6 h-6 flex items-center justify-center border border-green-500 ${cellStyle}`}
+              className={`w-[18px] h-[18px] flex items-center justify-center ${!isDone ? "border border-green-500" : ""} ${cellStyle}`}
+
             >
               {!isDone && !cell.active && !isCellActive && cell.type ? getEmoji(cell.type) : null}
             </div>
