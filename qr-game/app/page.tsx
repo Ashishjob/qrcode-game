@@ -54,20 +54,13 @@ export default function LoadingScreen() {
       <div className="absolute bottom-32 right-20">
         <div className="w-8 h-8 bg-green-700 [image-rendering:pixelated]" />
       </div>
-      <div className="absolute bottom-32 left-48">
-        <div className="w-12 h-8 bg-red-400 [image-rendering:pixelated]" />
-      </div>
-      <div className="absolute bottom-32 right-48">
-        <div className="w-8 h-8 bg-amber-800 [image-rendering:pixelated]" />
-      </div>
       {Array.from({ length: 6 }).map((_, i) => (
         <div 
           key={i} 
           className="absolute bottom-32"
           style={{ right: `${64 + i * 16}px` }}
         >
-          <div className="w-4 h-8 bg-pink-500 [image-rendering:pixelated]" />
-        </div>
+       </div>
       ))}
     </div>
   );
