@@ -37,7 +37,7 @@ export default function LoadingScreen() {
       
       <div className="relative w-96 flex items-center">
         <div className="absolute -left-12">
-          <div className="w-10 h-10 bg-pink-400 [image-rendering:pixelated]" />
+          <div className="w-10 h-10 bg-pink-400 [image-rendering:pixelated]" /> 
         </div>
         <div className="w-full bg-white h-8 shadow-[3px_3px_0_rgba(0,0,0,0.2)] [image-rendering:pixelated]">
           <div 
