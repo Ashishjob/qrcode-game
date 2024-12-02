@@ -8,11 +8,10 @@ const TerminalScreen = () => {
   const router = useRouter();
   
   const terminalText = [
-    'SYSTEM COMPROMISED...',
-    'INITIATING OVERRIDE SEQUENCE...',
-    'ACCESSING MAINFRAME...',
-    'DECRYPTING DATA...',
-    'REVEALING QR PUZZLE...'
+    '> YOU THOUGHT IT WAS GOING TO BE THAT EASY?',
+    '> IT WILL NEVER BE EASY',
+    '> IF YOU ARE UNABLE TO SOLVE THIS BRAIN TEASER, YOU ARE NOT ALLOWED TO LEAVE US',
+    '> LETS PLAY A GAME :) - BINGUS',
   ];
 
   useEffect(() => {

@@ -30,25 +30,23 @@ export default function LoadingScreen() {
   }
 
   return (
-    <div className="h-screen bg-sky-200 flex flex-col items-center justify-center relative">
-      <h1 className="text-4xl font-mono mb-20 [image-rendering:pixelated]">
+    <div className="h-screen bg-cover bg-center flex flex-col items-center justify-center relative" style={{ backgroundImage: 'url(/qrcode-background.svg)' }}>
+      <h1 className="text-4xl font-mono mb-20 [image-rendering:pixelated] text-black">
         WAIT TO CLAIM YOUR GIFT!
       </h1>
       
-      <div className="relative w-96 flex items-center">
-        <div className="absolute -left-12">
-          <div className="w-10 h-10 bg-pink-400 [image-rendering:pixelated]" />
+      <div className="relative w-full max-w-4xl flex items-center">
+        <div className="absolute -left-16">
+          <img src="/pixelated-heart.svg" alt="Pixelated Heart" className="w-32 h-32 [image-rendering:pixelated]" />
         </div>
-        <div className="w-full bg-white h-8 shadow-[3px_3px_0_rgba(0,0,0,0.2)] [image-rendering:pixelated]">
+        <div className="w-full bg-white rounded-xl h-12 shadow-[3px_3px_0_rgba(0,0,0,0.2)] [image-rendering:pixelated]">
           <div 
-            className="h-full bg-pink-400 transition-all duration-100"
+            className="h-full rounded-lg bg-pink-400 transition-all duration-100"
             style={{ width: `${progress}%` }}
           />
         </div>
-        <span className="ml-4 font-mono text-2xl">{progress}%</span>
+        <span className="ml-4 font-mono text-3xl text-black">{progress}%</span>
       </div>
-
-      <div className="absolute bottom-0 w-full h-32 bg-gradient-to-b from-green-400 to-green-700 shadow-[inset_0_4px_0_rgba(0,0,0,0.1)]" />
       
       <div className="absolute bottom-32 left-20">
         <div className="w-8 h-8 bg-green-700 [image-rendering:pixelated]" />
