@@ -102,7 +102,7 @@ const GRID_SIZE = QR_MATRIX.length;
           return (
             <div
               key={cell.id}
-              className={`w-[16px] h-[16px] flex items-center justify-center ${!isDone ? "border border-green-500" : ""} ${cellStyle}`}
+              className={`w-[17px] h-[17px] flex items-center justify-center ${!isDone ? "border border-green-500" : ""} ${cellStyle}`}
 
             >
               {!isDone && !cell.active && !isCellActive && cell.type ? getEmoji(cell.type) : null}
