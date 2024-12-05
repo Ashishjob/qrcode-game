@@ -116,21 +116,21 @@ const GRID_SIZE = QR_MATRIX.length;
 const getEmoji = (type: string) => {
   switch (type) {
     case "heart":
-      return <span style={{ fontSize: "12px" }}>❤️</span>;
+      return <span style={{ fontSize: "14px" }}>❤️</span>;
     case "flower":
-      return <span style={{ fontSize: "12px" }}>🌸</span>;
+      return <span style={{ fontSize: "14px" }}>🌸</span>;
     case "star":
-      return <span style={{ fontSize: "12px" }}>⭐</span>;
+      return <span style={{ fontSize: "14px" }}>⭐</span>;
     case "car":
-      return <span style={{ fontSize: "12px" }}>🚗</span>;
+      return <span style={{ fontSize: "14px" }}>🚗</span>;
     case "dog":
-      return <span style={{ fontSize: "12px" }}>🐶</span>;
+      return <span style={{ fontSize: "14px" }}>🐶</span>;
     case "circle":
-      return <span style={{ fontSize: "12px" }}>⚪</span>;
+      return <span style={{ fontSize: "14px" }}>⚪</span>;
     case "diamond":
-      return <span style={{ fontSize: "12px "}}>💎</span>;
+      return <span style={{ fontSize: "14px "}}>💎</span>;
     default:
-      return <span style={{ fontSize: "12px" }}>❓</span>;
+      return <span style={{ fontSize: "14px" }}>❓</span>;
   }
 };
 
